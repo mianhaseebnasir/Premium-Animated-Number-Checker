@@ -1,14 +1,16 @@
-Premium Animated Number Checker
+<h2>Premium Animated Number Checker</h2>
 
-A modern JavaScript Number Checker Web App that determines whether a number is Even or Odd with a beautiful glassmorphism UI, animations, sound effects, and dark/light mode support.
 
-This project is built using HTML, CSS, and JavaScript and is perfect for beginners learning JavaScript logic, DOM manipulation, UI design, and user interaction.
+A modern JavaScript Number Checker Web App that determines whether a number is Even or Odd with a beautiful glassmorphism UI, animations, sound effects, and dark/light mode support.<br>
 
-Live Preview
+This project is built using HTML, CSS, and JavaScript and is perfect for beginners learning JavaScript logic, DOM manipulation, UI design, and user interaction<br>
 
+<hr>
+
+<h2>Live Preview</h2>
 When the user enters a number, the application instantly checks whether it is Even or Odd and displays the result with smooth animations and sound feedback.
 
-Features
+<h2>Features</h2>
 
 • Modern Glassmorphism UI Design
 • Even / Odd Number Checking Logic
@@ -19,93 +21,76 @@ Features
 • Responsive Layout
 • Beginner Friendly JavaScript Logic
 
-How It Works
-
-User enters a number in the input field.
-
+<h2>How It Works</h2>
+User enters a number in the input field.<br>
 When the Check Now button is clicked:
 
 The app asks for the user's name.
 
-The number is checked using JavaScript logic.
+The number is checked using JavaScript logic.<br>
 
-If the number is divisible by 2, it is Even.
+If the number is divisible by 2, it is Even.<br>
 
-Otherwise, it is Odd.
+Otherwise, it is Odd.<br>
 
-The result is displayed with animation and sound feedback.
+The result is displayed with animation and sound feedback.<br>
 
-JavaScript Logic Used
-
+<h2>JavaScript Logic Used</h2>
 The application uses a simple mathematical logic:
-
-if(number % 2 === 0){
+<pre>if(number % 2 === 0){
    // Even Number
 }else{
    // Odd Number
-}
+}</pre>
 
 If the remainder after dividing by 2 is 0, the number is Even, otherwise it is Odd.
 
-Technologies Used
+<h2>Technologies Used</h2>
+• HTML5<br>
+• CSS3<br>
+• JavaScript (Vanilla JS)<br>
+• Google Fonts (Poppins)<br>
+• CSS Animations<br>
+• Glassmorphism UI Design<br>
 
-• HTML5
-• CSS3
-• JavaScript (Vanilla JS)
-• Google Fonts (Poppins)
-• CSS Animations
-• Glassmorphism UI Design
+<h2>Project Structure</h2>
 
-Project Structure
-
-project-folder
-│
-└── modern-checker.html
-
+project-folder<br>
+│<br>
+└── modern-checker.html<br>
 This project currently runs in a single HTML file containing:
+<li>HTML Structure</li>
+<li>CSS Styling</li>
+<li>JavaScript Logic</li>
 
-HTML Structure
+<h2>Learning Purpose</h2>
+This project is great for beginners who want to learn:<br>
+<li>JavaScript Functions</li>
 
-CSS Styling
+<li>DOM Manipulation</li>
 
-JavaScript Logic
+<li>User Input Handling</li>
 
-Learning Purpose
+<li>Conditional Logic</li>
 
-This project is great for beginners who want to learn:
+<li>CSS Animations</li>
 
-JavaScript Functions
+<li>UI Design Concepts</li>
 
-DOM Manipulation
+<h2>Future Improvements</h2>
+Possible upgrades for the project: <br>
 
-User Input Handling
+• Add Prime Number Checker<br>
+• Add Multiple Number Checking<br>
+• Improve UI Animations<br>
+• Add History of Checked Numbers<br>
+• Convert into React App<br>
 
-Conditional Logic
+<h2>Author</h2>
+Mian Haseeb Nasir<br>
+Full Stack Developer (AI)<br>
+Software Engineer<br>
+Founder of Nova-Stack Technologies<br>
 
-CSS Animations
-
-UI Design Concepts
-
-Future Improvements
-
-Possible upgrades for the project:
-
-• Add Prime Number Checker
-• Add Multiple Number Checking
-• Improve UI Animations
-• Add History of Checked Numbers
-• Convert into React App
-
-Author
-
-Mian Haseeb Nasir
-
-Full Stack Developer (AI)
-
-Software Engineer
-
-Founder of Nova Stack Technologies
-
-License
-
+<h2>License</h2>
 This project is open-source and available for learning and educational purposes.
