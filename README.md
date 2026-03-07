@@ -10,6 +10,7 @@ This project is built using HTML, CSS, and JavaScript and is perfect for beginne
 <h2>Live Preview</h2>
 When the user enters a number, the application instantly checks whether it is Even or Odd and displays the result with smooth animations and sound feedback.
 
+<hr>
 <h2>Features</h2>
 
 • Modern Glassmorphism UI Design
@@ -20,7 +21,7 @@ When the user enters a number, the application instantly checks whether it is Ev
 • Clean User Interface
 • Responsive Layout
 • Beginner Friendly JavaScript Logic
-
+<hr>
 <h2>How It Works</h2>
 User enters a number in the input field.<br>
 When the Check Now button is clicked:
@@ -34,7 +35,7 @@ If the number is divisible by 2, it is Even.<br>
 Otherwise, it is Odd.<br>
 
 The result is displayed with animation and sound feedback.<br>
-
+<hr>
 <h2>JavaScript Logic Used</h2>
 The application uses a simple mathematical logic:
 <pre>if(number % 2 === 0){
@@ -44,7 +45,7 @@ The application uses a simple mathematical logic:
 }</pre>
 
 If the remainder after dividing by 2 is 0, the number is Even, otherwise it is Odd.
-
+<hr>
 <h2>Technologies Used</h2>
 • HTML5<br>
 • CSS3<br>
@@ -52,7 +53,7 @@ If the remainder after dividing by 2 is 0, the number is Even, otherwise it is O
 • Google Fonts (Poppins)<br>
 • CSS Animations<br>
 • Glassmorphism UI Design<br>
-
+<hr>
 <h2>Project Structure</h2>
 
 project-folder<br>
@@ -62,7 +63,7 @@ This project currently runs in a single HTML file containing:
 <li>HTML Structure</li>
 <li>CSS Styling</li>
 <li>JavaScript Logic</li>
-
+<hr>
 <h2>Learning Purpose</h2>
 This project is great for beginners who want to learn:<br>
 <li>JavaScript Functions</li>
@@ -76,7 +77,7 @@ This project is great for beginners who want to learn:<br>
 <li>CSS Animations</li>
 
 <li>UI Design Concepts</li>
-
+<hr>
 <h2>Future Improvements</h2>
 Possible upgrades for the project: <br>
 
@@ -85,12 +86,12 @@ Possible upgrades for the project: <br>
 • Improve UI Animations<br>
 • Add History of Checked Numbers<br>
 • Convert into React App<br>
-
+<hr>
 <h2>Author</h2>
 Mian Haseeb Nasir<br>
 Full Stack Developer (AI)<br>
 Software Engineer<br>
 Founder of Nova-Stack Technologies<br>
-
+<hr>
 <h2>License</h2>
 This project is open-source and available for learning and educational purposes.
