@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premium Animated Number Checker</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+    transition:0.3s ease;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+}
+
+/* Dark Mode */
+body.dark{
+    background:linear-gradient(135deg,#141e30,#243b55);
+}
+
+.card{
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(15px);
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.3);
+    width:360px;
+    text-align:center;
+    color:#fff;
+    animation:fadeIn 1s ease;
+}
+
+body.dark .card{
+    background:rgba(0,0,0,0.4);
+}
+
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(-30px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+h1{
+    margin-bottom:20px;
+    font-weight:600;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:8px;
+    margin-bottom:15px;
+    outline:none;
+    font-size:14px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    background:#fff;
+    color:#764ba2;
+    font-weight:600;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#000;
+    color:#fff;
+    transform:scale(1.05);
+}
+
+#result{
+    margin-top:15px;
+    background:rgba(255,255,255,0.25);
+    color:#fff;
+    font-weight:500;
+    transform:scale(0);
+}
+
+.show{
+    animation:pop 0.4s ease forwards;
+}
+
+@keyframes pop{
+    0%{transform:scale(0);}
+    80%{transform:scale(1.1);}
+    100%{transform:scale(1);}
+}
+
+.toggle{
+    position:absolute;
+    top:20px;
+    right:20px;
+    background:#fff;
+    padding:8px 12px;
+    border-radius:20px;
+    cursor:pointer;
+    font-size:12px;
+    font-weight:600;
+}
+</style>
+</head>
+
+<body>
+
+<div class="toggle" onclick="toggleMode()">🌙 Mode</div>
+
+<div class="card">
+    <h1>Number Checker</h1>
+
+    <form onsubmit="getNumber(); return false;">
+        <input type="number" id="num1" placeholder="Enter a number" required>
+        <button type="submit">Check Now</button>
+    </form>
+
+    <input type="text" id="result" readonly placeholder="Result will appear here">
+</div>
+
+<script>
+
+// Sound Effects
+const evenSound = new Audio("https://www.soundjay.com/buttons/sounds/button-3.mp3");
+const oddSound = new Audio("https://www.soundjay.com/buttons/sounds/button-10.mp3");
+
+// Dark / Light Mode
+function toggleMode(){
+    document.body.classList.toggle("dark");
+}
+
+// Number Checker
+function getNumber(){
+    let userName = prompt("Enter your name");
+    let number = Number(document.getElementById("num1").value);
+    let resultBox = document.getElementById("result");
+
+    resultBox.classList.remove("show");
+
+    setTimeout(()=>{
+        if(number % 2 === 0){
+            resultBox.value = `${userName}, ${number} is an EVEN number ✅`;
+            evenSound.play();
+        }else{
+            resultBox.value = `${userName}, ${number} is an ODD number 🔥`;
+            oddSound.play();
+        }
+
+        resultBox.classList.add("show");
+    },100);
+}
+
+</script>
+
+</body>
+</html>
